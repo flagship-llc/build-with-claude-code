@@ -1,0 +1,111 @@
+# Build with Claude Code: Zero to One
+
+*A Hands-On Workshop for Everyone*
+
+AIとペアプログラミングして、1日で自分だけのツールを作るワークショップの資料集です。
+
+---
+
+## イベント概要
+
+- **形式**: 1日ワークショップ（10:00 - 18:00）
+- **定員**: 8名程度（少人数制）
+- **対象**: エンジニアリング経験不問
+
+---
+
+## 資料一覧
+
+### Day 1: 事前セットアップ会
+
+| 資料 | 内容 |
+|------|------|
+| [環境構築手順書](day1-setup/01-environment-setup.md) | Mac + VS Code + Claude Code のセットアップ |
+| [Claudeの基本的な使い方](day1-setup/02-claude-basics.md) | Claude Codeの操作方法、話しかけ方のコツ |
+
+### Day 1.5: プレ開発期間
+
+| 資料 | 内容 |
+|------|------|
+| [議事録要約チュートリアル](day1.5-pre-dev/tutorial-minutes-summary/README.md) | ステップバイステップで学ぶ最初のツール作り |
+| [サンプルテンプレート集](day1.5-pre-dev/templates/README.md) | 10種類のツールアイデアとスタートプロンプト |
+
+### Day 2: キャンプ当日
+
+| 資料 | 内容 |
+|------|------|
+| [タイムテーブル](day2-camp/schedule.md) | 当日のスケジュール詳細 |
+| [トラブルシューティング](day2-camp/troubleshooting.md) | よくある問題と解決方法 |
+
+### リファレンス
+
+| 資料 | 内容 |
+|------|------|
+| [開発の基礎知識](reference/dev-fundamentals.md) | ターミナル、ファイル構成、Git、セキュリティの基本 |
+| [Tips集](reference/tips.md) | Claude Codeを使うコツ、よく使うフレーズ |
+
+---
+
+## ディレクトリ構成
+
+```
+claude-code-camp/
+├── README.md                      # この文書
+├── day1-setup/                    # 事前セットアップ会
+│   ├── 01-environment-setup.md    # 環境構築手順書
+│   └── 02-claude-basics.md        # Claudeの基本的な使い方
+├── day1.5-pre-dev/                # プレ開発期間
+│   ├── tutorial-minutes-summary/  # チュートリアル
+│   │   └── README.md
+│   └── templates/                 # サンプルテンプレート
+│       └── README.md
+├── day2-camp/                     # 当日
+│   ├── schedule.md                # タイムテーブル
+│   └── troubleshooting.md         # トラブルシューティング
+└── reference/                     # リファレンス
+    ├── dev-fundamentals.md        # 開発の基礎知識
+    └── tips.md                    # Tips集
+```
+
+---
+
+## 参加者向けクイックスタート
+
+1. **事前セットアップ会**で[環境構築](day1-setup/01-environment-setup.md)を完了
+2. [Claudeの基本的な使い方](day1-setup/02-claude-basics.md)を読む
+3. [議事録要約チュートリアル](day1.5-pre-dev/tutorial-minutes-summary/README.md)に挑戦
+4. 当日は自分のアイデアを形にする！
+
+---
+
+## 運営者向け
+
+### 事前準備チェックリスト
+
+- [ ] 参加者へのアカウント発行（Claude Pro）
+- [ ] 事前セットアップ会の日程調整
+- [ ] 会場の設備確認（Wi-Fi、電源、プロジェクター）
+- [ ] 弁当の手配
+- [ ] 緊急連絡先の整理
+
+### 当日の役割分担
+
+- **MC**: オープニング、クロージング、タイムキープ
+- **メンター**: 開発サポート、トラブルシューティング
+- **記録**: 写真撮影、SNS投稿
+
+---
+
+## 会社サポート
+
+- **Claude Proプラン**: 参加者全員に提供
+- **Maxプラン**: Token制限時にアップグレード対応
+
+---
+
+## フィードバック・改善
+
+イベント後、以下を更新：
+- トラブルシューティングに新しい問題を追加
+- Tips集によく使ったフレーズを追加
+- テンプレート集に参加者が作ったツールを追加
