@@ -1,4 +1,4 @@
-{
+export default {
   "index": "はじめに",
   "day1-setup": "Day 1: セットアップ",
   "day1.5-pre-dev": "Day 1.5: プレ開発",

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" fill="none">
+  <!-- 0 -->
+  <text x="5" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#1a1a1a">0</text>
+
+  <!-- Arrow -->
+  <path d="M32 20 L52 20 M46 14 L52 20 L46 26" stroke="#E57B3A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 1 -->
+  <text x="58" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#1a1a1a">1</text>
+</svg>

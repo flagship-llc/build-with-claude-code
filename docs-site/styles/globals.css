@@ -1,0 +1,28 @@
+/* Custom styles for Zero to One workshop docs */
+
+:root {
+  --background-color: #FAF9F0;
+}
+
+body {
+  background-color: var(--background-color) !important;
+}
+
+/* Ensure main content area also has the background */
+.nextra-container {
+  background-color: var(--background-color);
+}
+
+/* Nav and sidebar backgrounds */
+nav.nx-bg-white,
+.nx-bg-white {
+  background-color: var(--background-color) !important;
+}
+
+/* Dark mode - keep dark background */
+.dark body,
+.dark .nextra-container,
+.dark nav.nx-bg-white,
+.dark .nx-bg-white {
+  background-color: #111 !important;
+}

@@ -5,4 +5,18 @@ const withNextra = nextra({
   themeConfig: './theme.config.tsx',
 })
 
-export default withNextra()
+export default withNextra({
+  i18n: {
+    locales: ['ja', 'en'],
+    defaultLocale: 'ja',
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/ja',
+        permanent: true,
+      },
+    ]
+  },
+})
