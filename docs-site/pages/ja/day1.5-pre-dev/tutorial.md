@@ -32,7 +32,7 @@ $ python summarize.py meeting.txt
 
 ## 事前準備
 
-1. 環境構築が完了していること（[環境構築手順書](../../day1-setup/01-environment-setup.md)参照）
+1. 環境構築が完了していること（[環境構築手順書](../day1-setup/environment-setup)参照）
 2. Claude Codeが起動できること
 
 ---

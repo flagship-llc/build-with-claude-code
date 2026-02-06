@@ -482,4 +482,4 @@ Node.jsがインストールされていません。
 
 基礎知識を押さえたら、実際に手を動かしてみましょう。
 
-→ [議事録要約ツールのチュートリアル](../day1.5-pre-dev/tutorial-minutes-summary/README.md)
+→ [議事録要約ツールのチュートリアル](../day1.5-pre-dev/tutorial)

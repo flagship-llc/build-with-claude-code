@@ -153,7 +153,7 @@
 
 ## 参考資料リンク
 
-- [環境構築手順書](../day1-setup/01-environment-setup.md)
-- [Claudeの基本的な使い方](../day1-setup/02-claude-basics.md)
-- [Tips集](./tips.md)
-- [トラブルシューティング](./troubleshooting.md)
+- [環境構築手順書](../day1-setup/environment-setup)
+- [Claudeの基本的な使い方](../day1-setup/claude-basics)
+- [Tips集](../reference/tips)
+- [トラブルシューティング](./troubleshooting)
