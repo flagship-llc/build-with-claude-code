@@ -432,9 +432,14 @@ This project is an internal expense management system.
 - Generates code following project rules
 - Entire team uses Claude with same settings
 
-**Location**:
-- Project-specific: `project-folder/CLAUDE.md`
-- Global: `~/.claude/CLAUDE.md`
+**Location and Usage**:
+
+| Type | Location | Purpose |
+|------|----------|---------|
+| Project-specific | `project-folder/CLAUDE.md` | Rules specific to that project (tech stack, coding standards, directory structure, etc.) |
+| Global | `~/.claude/CLAUDE.md` | Your personal preferences (commit message style, language settings, work style, etc.) |
+
+Global settings apply to all projects. If project-specific settings exist, both are loaded.
 
 ---
 

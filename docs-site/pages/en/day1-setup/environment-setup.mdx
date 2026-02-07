@@ -1,3 +1,5 @@
+import { Steps } from 'nextra/components'
+
 # Environment Setup Guide
 
 This guide covers the environment setup for participating in Claude Code Camp.
@@ -13,11 +15,15 @@ We'll go through this together at the setup session, so don't worry if you haven
 
 ---
 
-## Step 0: Installing Development Tools
+## Setup Steps
+
+<Steps>
+
+### Installing Development Tools
 
 First, let's install the basic development tools.
 
-### Installing Homebrew
+#### Installing Homebrew
 
 Homebrew is a package manager that makes it easy to install development tools on Mac.
 
@@ -48,7 +54,7 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-### Installing Git
+#### Installing Git
 
 Git is a version control tool for code. It's needed when developing with Claude.
 
@@ -72,7 +78,7 @@ brew install git
 
 After installation, verify by running `git --version` again.
 
-### Installing Node.js (Recommended)
+#### Installing Node.js (Recommended)
 
 Required for JavaScript and web app development. Even if you don't need it now, it's useful to have installed.
 
@@ -88,30 +94,26 @@ node --version
 brew install node
 ```
 
----
-
-## Step 1: Installing VS Code
+### Installing VS Code
 
 VS Code (Visual Studio Code) is an editor for writing code.
 
-### Check: Is it already installed?
+#### Check: Is it already installed?
 
 Check if "Visual Studio Code" is in your Applications folder.
 
-### Installation
+#### Installation
 
 Download from the official site:
 https://code.visualstudio.com/
 
 Open the downloaded file and drag it to your Applications folder.
 
-### Launch VS Code
+#### Launch VS Code
 
 Open "Visual Studio Code" from your Applications folder.
 
----
-
-## Step 2: Installing Claude Code
+### Installing Claude Code
 
 Now let's install Claude Code. It's easy to install from the VS Code extensions.
 
@@ -121,17 +123,15 @@ Now let's install Claude Code. It's easy to install from the VS Code extensions.
 4. Find "**Claude**" (official Anthropic extension) and click "**Install**"
 5. Wait for installation to complete
 
-### Verification
+#### Verification
 
 If the **Claude icon** (Anthropic logo) appears in the VS Code left sidebar, installation is complete.
 
----
-
-## Step 3: Claude Code Authentication
+### Claude Code Authentication
 
 To use Claude Code, you need to authenticate with your Anthropic account.
 
-### Start Authentication
+#### Start Authentication
 
 1. Click the **Claude icon** in VS Code's left sidebar
 2. Click the "**Sign in**" button
@@ -141,13 +141,11 @@ To use Claude Code, you need to authenticate with your Anthropic account.
 
 Success is when you see the chat panel in VS Code's Claude panel.
 
----
-
-## Step 4: Verification
+### Verification
 
 Let's verify that all settings are complete.
 
-### Create a Project Folder in VS Code
+#### Create a Project Folder in VS Code
 
 1. Open VS Code
 2. From the menu, select "File" → "Open Folder"
@@ -155,7 +153,7 @@ Let's verify that all settings are complete.
    - Location: Home folder → `projects` → `my-first-app`
    - (Create the `projects` folder if it doesn't exist)
 
-### Try Talking to Claude Code
+#### Try Talking to Claude Code
 
 1. Click the **Claude icon** in VS Code's left sidebar
 2. Type the following in the chat field and press Enter:
@@ -165,6 +163,8 @@ Hello! What's today's date?
 ```
 
 If Claude responds, your environment setup is complete!
+
+</Steps>
 
 ---
 

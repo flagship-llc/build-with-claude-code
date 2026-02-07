@@ -14,7 +14,12 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/flagship-llc/build-with-claude-code',
   footer: {
-    content: <span>Flagship Inc.</span>,
+    content: (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+        <span>Flagship Inc.</span>
+        <span style={{ fontSize: '12px', color: '#666' }}>Made in Tokyo / Built with Claude</span>
+      </div>
+    ),
   },
   sidebar: {
     defaultMenuCollapseLevel: 1,
