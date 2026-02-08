@@ -2,8 +2,8 @@ import { Steps } from 'nextra/components'
 
 # Environment Setup Guide
 
-This guide covers the environment setup for participating in Claude Code Camp.
-We'll go through this together at the setup session, so don't worry if you haven't completed it beforehand.
+This guide covers the environment setup for participating in the Build with Claude Code workshop.
+**Please complete this setup beforehand if possible.** We'll provide support at the setup session, but completing it ahead of time will help things go more smoothly on the day.
 
 ---
 
@@ -11,7 +11,16 @@ We'll go through this together at the setup session, so don't worry if you haven
 
 - Mac
 - Internet connection
-- Claude account
+- Claude account (**Pro** plan or higher)
+  - Free trial available (credit card registration required)
+  - See [Claude Pricing](https://claude.com/pricing) for details
+- GitHub account (Required)
+  - Useful for version control and sharing your portfolio
+  - Free registration at [GitHub](https://github.com/)
+  - **Which account to use**: Use your company's GitHub for work-related projects, and your personal GitHub account for personal projects
+  - **About Public / Private repositories**:
+    - **Public**: Anyone can view. For portfolios and open source projects
+    - **Private**: Only you and invited collaborators can view. For work code and private projects
 
 ---
 
@@ -94,6 +103,32 @@ node --version
 brew install node
 ```
 
+#### Installing Python (Recommended)
+
+Required for scripts, data processing, and automation tools. Also used in the tutorials.
+
+**Check**
+
+```bash
+python3 --version
+```
+
+If a version number appears, you're good. Python usually comes pre-installed on Mac, but if not, install it with the steps below.
+
+**Installation**
+
+```bash
+brew install python
+```
+
+#### Installing Xcode (For iPhone App Development)
+
+If you want to build iPhone apps (iOS), you'll need Xcode.
+
+**Installation**
+
+Search for "Xcode" in the App Store and install it. The file size is large (about 30GB), so we recommend downloading it when you have plenty of time.
+
 ### Installing VS Code
 
 VS Code (Visual Studio Code) is an editor for writing code.
@@ -144,6 +179,23 @@ Success is when you see the chat panel in VS Code's Claude panel.
 ### Verification
 
 Let's verify that all settings are complete.
+
+#### Recommended Folder Structure
+
+Keeping all your development projects in a `projects` folder inside your home folder makes them easier to manage.
+
+```
+~/
+└── projects/           ← Keep all projects here
+    ├── my-first-app/   ← Folder to create now
+    ├── meeting-summary/← Tool from the tutorial
+    └── my-tool/        ← Future projects
+```
+
+Benefits of this structure:
+- Easy to find your projects
+- Simple terminal navigation (`cd ~/projects/project-name`)
+- Easy to backup
 
 #### Create a Project Folder in VS Code
 
@@ -196,10 +248,14 @@ Verify your environment setup is complete:
 
 - [ ] Homebrew is installed (`brew --version` to check)
 - [ ] Git is installed (`git --version` to check)
+- [ ] Node.js is installed (`node --version` to check, recommended)
+- [ ] Python is installed (`python3 --version` to check, recommended)
 - [ ] VS Code is installed and launches
 - [ ] Claude icon appears in VS Code's left sidebar
 - [ ] You're logged in to Claude
 - [ ] Claude responds when you talk to it
+- [ ] You have a GitHub account (recommended)
+- [ ] You created the `~/projects/` folder
 
 If everything is checked, you're ready!
 

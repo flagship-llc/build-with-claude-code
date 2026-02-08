@@ -106,34 +106,41 @@ A coding assistant from Anthropic available both as a terminal CLI and VS Code e
 
 ## Claude Code's Position
 
-### Differences from Other Tools
+### The Fundamental Difference from Traditional AI Tools
+
+Traditional AI coding tools (Copilot, Cursor, etc.) are designed as **"productivity tools for programmers"**. They predict the next line while you're coding or improve selected sections—essentially an "assistant" role.
+
+In contrast, Claude Code is designed as **"a partner you can delegate tasks to"**.
 
 | Aspect | Copilot / Cursor | Claude Code |
 |--------|------------------|-------------|
-| Interface | Operate within editor | Converse in terminal |
-| Primary Use | Complete code while writing | Delegate and execute tasks |
-| Target User | Those who can code | **No coding required** |
-| Strengths | Speed, completion accuracy | Design, reasoning |
+| Design Philosophy | Assist the programmer | Delegate tasks |
+| Assumption | User writes the code | User gives instructions |
+| Input | While writing code | "Build something like this" |
+| Output | Next line, improvements | Complete file sets |
+
+### Concrete Differences
+
+**How Copilot / Cursor works**:
+```
+User: (starts writing a function)
+Tool: (predicts and displays the next line)
+User: (accepts with Tab, continues writing)
+```
+
+**How Claude Code works**:
+```
+User: "Build a user registration feature. Register with email and password, send confirmation email"
+Claude: (creates all necessary files, including tests)
+```
 
 ### Why We Use Claude Code in This Workshop
 
 1. **No programming experience required**: Just say "build something like this" in natural language
 2. **Consistent from design to implementation**: Can delegate from deciding what to build
-3. **Simple environment**: Just need a terminal to get started
-4. **Opus model's reasoning power**: Understands intent even from ambiguous instructions
-
----
-
-## Using Tools in Combination
-
-Many developers use multiple tools depending on the task.
-
-| Task | Recommended Tool |
-|------|-----------------|
-| Daily coding | Copilot, Cursor |
-| Design and complex problem-solving | Claude Code |
-| Large-scale refactoring | Cursor, Claude Code |
-| Learning and prototyping | Claude Code |
+3. **Interactive progress**: Can request changes like "modify this part like so"
+4. **Opus model's reasoning power**: Understands intent even from ambiguous instructions, makes appropriate technology choices
+5. **VS Code integration**: Complete everything within a familiar editor
 
 ---
 
@@ -141,8 +148,8 @@ Many developers use multiple tools depending on the task.
 
 - AI coding tools come in three types: **IDE Extensions**, **AI-Integrated IDEs**, and **Terminal-Based**
 - GitHub Copilot is most widespread, Cursor is an AI-native IDE, Google Antigravity specializes in agents
-- Claude Code is the **only tool usable without programming experience**
-- Best to use different tools for different purposes
+- Claude Code is **usable without programming experience**, a task delegation-style tool
+- Traditional tools are "assistants", Claude Code is a "partner"—a fundamental design philosophy difference
 
 ---
 

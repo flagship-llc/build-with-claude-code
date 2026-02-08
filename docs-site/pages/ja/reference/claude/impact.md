@@ -8,6 +8,16 @@ AI、特に Claude のような大規模言語モデルは、ソフトウェア�
 
 2025年後半から、「SaaS is Dead」という言葉が広まり始めました。
 
+### SaaS企業への衝撃
+
+Anthropic のエージェント型AIツール発表を受け、2025年2月3日だけで SaaS 企業の時価総額が約45兆円失われたと報じられています。従来の SaaS 企業は「座席課金モデル」に依存していましたが、AIエージェントが UI を介さず API 経由で直接操作するようになると、この収益構造が崩壊する可能性があります。
+
+一方で、AI については「確実な実利が存在する」とも分析されています。生成AIの実装スピードが歴史的なインフラ革命（鉄道網など）と比較して劇的に短縮されているため、期待値が現実に回収されやすいというのです。
+
+Claude Code の革新性は、アプリケーション層ではなく「OS層に近い領域でAIが動作する」ことにあり、ユーザーの PC 上の作業そのものを代替する構造的な優位性を持つと評価されています。
+
+参考: [SaaSは死ぬが、AIバブルは弾けない（NewsPicks）](https://newspicks.com/news/15987265/)
+
 ### 従来の SaaS モデル
 
 これまでソフトウェアを使いたい場合、選択肢は限られていました：
@@ -77,6 +87,28 @@ AI ペアプログラミング：
 - Claude への効果的な指示の出し方
 - AI と協力して開発を進める方法
 - 「作れる」という自信と経験
+
+---
+
+## Anthropic CEO のビジョン
+
+Anthropic CEO の Dario Amodei は、AI の未来について深い洞察を示すエッセイを公開しています。
+
+### Machines of Loving Grace
+
+**「AIがどのように世界をより良くできるか」**についてのエッセイ。
+
+AIが生物学・医療、経済発展、平和と安全、仕事と創造性、そして人間関係にどのような positive な影響を与えうるかを論じています。
+
+[Machines of Loving Grace - How AI Could Transform the World for the Better](https://www.darioamodei.com/essay/machines-of-loving-grace)
+
+### The Adolescence of Technology
+
+**「強力なAIのリスクにどう向き合い、乗り越えるか」**についてのエッセイ。
+
+AIの急速な発展に伴うリスクと、それを responsible に管理していくための考え方を示しています。
+
+[The Adolescence of Technology - Confronting and Overcoming the Risks of Powerful AI](https://www.darioamodei.com/essay/the-adolescence-of-technology)
 
 ---
 

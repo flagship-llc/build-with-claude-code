@@ -8,8 +8,34 @@ Learn how to program with AI using Claude Code.
 
 Claude Code is a VS Code extension that lets you program while chatting with Claude (AI).
 
+### Two Interfaces
+
+Claude Code can be used in two ways:
+
+| Interface | Description | Features |
+|-----------|-------------|----------|
+| **Chat UI** (VS Code extension) | Chat in VS Code sidebar | Beginner-friendly, intuitive |
+| **Terminal** | Command line interaction | For advanced users, faster |
+
+This workshop primarily uses the **Chat UI**.
+
+![VS Code UI](/images/vscode-ui.png)
+
+- Center Claude icon: Opens the terminal
+- Bottom-right icon: Opens the Claude Code chat UI
+
+**How to launch in Terminal** (for reference):
+```bash
+claude
+```
+Type `claude` in Terminal to start Claude Code.
+
+**Note**: Slash commands like `/compact` and `/clear` are **only available in Terminal**. In the Chat UI, use the "+" button to start a new chat.
+
+---
+
 **What you do**
-- Tell Claude what you want to build in plain English
+- Tell Claude what you want to build in natural language
 - Review what's been created
 - Request modifications or additions
 
@@ -91,70 +117,41 @@ Claude Code has usage limits. When you hit the limit, it becomes temporarily una
 
 | Limit | Description | Reset |
 |-------|-------------|-------|
-| 5-hour rolling | Usage over the last 5 hours | Gradually recovers after 5 hours |
-| Weekly Quota | Weekly usage limit | Resets weekly |
+| 5-hour session | Usage from when you start | Resets after 5 hours |
+| Weekly Quota | Weekly usage limit | 7-day rolling window |
 
 ### When Approaching Limits
 
 - A warning appears on screen
-- When the limit is reached, you need to wait
+- When the limit is reached, you need to wait until the specified reset time (displayed as "Resets today at ○○")
 - **Switching to Max Plan**: Contact a mentor (company will cover the cost)
 
 ### Tips to Save Usage
 
 - Don't continue unnecessarily long conversations
-- Start new topics with `/compact` or a new chat
+- Start new topics with a new chat ("+" button)
 - Try small iterations rather than aiming for perfection at once
 
 ---
 
-## Compact Feature (Context Compression)
+## When Conversations Get Long
 
 As conversations with Claude get longer, it may slow down or forget earlier content.
 This is **separate from the Quota (usage limit) issue**.
 
-### What is Compact?
+### How to Handle
 
-A feature that summarizes conversation history to reduce the data Claude processes.
+**In Chat UI (VS Code)**:
+- Click the "**+**" button to start a new chat
 
-### When to Use
+**In Terminal**:
+- Use the `/compact` command to compress conversation history
+
+### When to Start a New Chat
 
 - When conversations get long
 - When you feel "Did it forget what I said earlier?"
 - When starting new work
-
-### How to Use
-
-Type in the chat:
-
-```
-/compact
-```
-
-Starting a new chat is also effective.
-
----
-
-## Claude Usage (Usage Monitoring App)
-
-There's a Mac app to check your usage.
-
-### Installation
-
-1. Search for "**Claude Usage**" in the App Store
-2. Install
-3. Log in with your Anthropic account
-
-### What You Can Check
-
-- Current usage
-- 5-hour rolling remaining
-- Weekly Quota remaining
-
-### Recommended Usage
-
-Keep it in the menu bar so you can always check your usage.
-It's reassuring to know "how much more you can use".
 
 ---
 
@@ -319,7 +316,7 @@ When conversations get long or Claude seems confused, **starting over** is effec
 - Suggestions keep getting more complex
 
 **How to reset**:
-1. Use `/clear` to clear the chat, or start a new chat
+1. Click the "**+**" button to start a new chat (in Terminal: `/clear`)
 2. **Simply explain** what you want to do again
 3. Restart from minimum functionality
 
@@ -331,29 +328,8 @@ It might seem like a detour, but it's often faster in the end.
 
 ### Start a New Chat
 
-The "**+**" button at the top of the chat panel, or:
-
-```
-/clear
-```
-
+Click the "**+**" button at the top of the chat panel.
 Use this when starting a new topic.
-
-### Compress Context
-
-```
-/compact
-```
-
-Use when conversations get long.
-
-### View Help
-
-```
-/help
-```
-
-Shows a list of available commands.
 
 ### Undo Last Change
 
@@ -365,35 +341,17 @@ Undo the last change
 
 Or use the "Undo" button next to Claude's response.
 
----
+### Terminal Commands (Reference)
 
-## File Operation Examples
+When using Claude Code in Terminal, these slash commands are available:
 
-### Create a New File
+| Command | Description |
+|---------|-------------|
+| `/clear` | Clear the chat |
+| `/compact` | Compress context (when conversations get long) |
+| `/help` | Show command list |
 
-```
-Create a file called hello.py with a program that prints Hello World
-```
-
-### Edit an Existing File
-
-```
-Edit hello.py to accept name input
-```
-
-### Check File Contents
-
-```
-Show me the contents of hello.py
-```
-
-### Run a File
-
-```
-Run hello.py
-```
-
-→ When asked for permission to run, select Allow.
+**Note**: These commands are not available in the Chat UI.
 
 ---
 
@@ -480,14 +438,157 @@ Add MCP servers in VS Code settings (`settings.json`).
 }
 ```
 
+#### Types of MCP Servers
+
+MCP servers can be categorized into three types based on what they provide:
+
+| Type | Description | Examples |
+|------|-------------|----------|
+| **Information/Docs Provider** | Provides API docs, schema info (reference only) | Shopify Dev MCP |
+| **Data Provider** | Access to actual data (read/write) | GitHub, Shopify, Slack, PostgreSQL |
+| **Tool/Action Provider** | Executes operations and processes | Playwright, Filesystem, Fetch |
+
+**Example: Shopify-related MCPs**
+
+| MCP | Type | Purpose |
+|-----|------|---------|
+| **Shopify Dev MCP** | Information Provider | API docs search, development reference (no auth required) |
+| **Shopify MCP** | Data Provider | Access actual product, inventory, order data (auth required) |
+
 #### Common MCP Servers
+
+**Information/Docs Providers** (reference, often no auth required)
 
 | MCP | Purpose | Use Cases |
 |-----|---------|-----------|
-| Slack | Slack integration | Post messages, get channel info |
-| Shopify | EC operations support | Get product data, check inventory, manage orders |
-| Filesystem | File operations | Access files outside specific folders |
-| PostgreSQL | DB operations | Retrieve/update data |
+| [Shopify Dev MCP](https://shopify.dev/docs/apps/build/devmcp) | Shopify development | API spec search, Polaris/Hydrogen/Functions |
+
+**Data Providers** (real data access, auth required)
+
+| MCP | Purpose | Use Cases |
+|-----|---------|-----------|
+| [GitHub](https://github.com/modelcontextprotocol/servers) | GitHub integration | Issue/PR management, code review |
+| [Slack](https://github.com/anthropics/mcp-server-slack) | Slack integration | Post messages, get channel info |
+| [Shopify](https://github.com/siddhantbajaj/shopify-mcp-server) | EC operations | Product data, inventory, orders |
+| [Notion](https://github.com/anthropics/mcp-server-notion) | Notion integration | Page creation/editing, database ops |
+| [Google Drive](https://github.com/anthropics/mcp-server-gdrive) | Drive integration | File search and retrieval |
+| [PostgreSQL](https://github.com/modelcontextprotocol/servers) | DB operations | Data retrieval/update, SQL execution |
+| [Memory](https://github.com/modelcontextprotocol/servers) | Knowledge graph | Persistent storage, related info recall |
+
+**Tool/Action Providers** (execute operations)
+
+| MCP | Purpose | Use Cases |
+|-----|---------|-----------|
+| [Playwright](https://github.com/anthropics/mcp-server-playwright) | Browser automation | E2E testing, UI automation |
+| [Filesystem](https://github.com/modelcontextprotocol/servers) | File operations | Access files outside specific folders |
+| [Git](https://github.com/modelcontextprotocol/servers) | Git repository ops | Commit history search, diff viewing |
+| [Fetch](https://github.com/modelcontextprotocol/servers) | Web fetching | Get content from URLs, API calls |
+| [Time](https://github.com/modelcontextprotocol/servers) | Time/timezone | Time conversion, timezone calculations |
+| [Sequential Thinking](https://github.com/modelcontextprotocol/servers) | Thinking support | Step-by-step complex problem solving |
+
+For more, see [MCP Official Repository](https://github.com/modelcontextprotocol/servers) or [Awesome MCP Servers](https://mcp-awesome.com/).
+
+#### Shopify Dev MCP
+
+A helpful MCP server for Shopify app **development**. Runs locally without authentication.
+
+**Type**: Information/Docs Provider (no access to real data)
+
+**Features**:
+- Search Shopify API documentation
+- Explore Admin GraphQL API schema
+- Get info on Polaris, Hydrogen, Storefront Web Components
+- Shopify Functions development support
+
+**Example configuration**:
+
+```json
+{
+  "claude.mcpServers": {
+    "shopify-dev": {
+      "command": "npx",
+      "args": ["-y", "@shopify/dev-mcp"]
+    }
+  }
+}
+```
+
+#### Shopify MCP (Data Provider)
+
+An MCP server to access **real data** in your Shopify store. Requires authentication.
+
+**Type**: Data Provider (access to actual products, inventory, orders)
+
+---
+
+### Sub-Agents (Automatic Task Splitting)
+
+Claude automatically splits complex tasks into smaller tasks and processes them in parallel. These are called **sub-agents**.
+
+#### When are they used?
+
+- When searching/editing multiple files simultaneously
+- When performing large refactoring
+- When running tests in parallel
+
+#### Example
+
+```
+In all JavaScript files in the project,
+replace var with let or const
+```
+
+→ Claude automatically launches:
+1. An agent to find target files
+2. Agents to modify each file
+3. An agent to verify changes
+
+and processes them efficiently.
+
+#### How to check
+
+When sub-agents are running, you may see "Agent" displayed in the chat.
+Since multiple processes run simultaneously, it may take longer to get results than for simple tasks.
+
+---
+
+### Agent Teams
+
+**Agent Teams** is an advanced feature that builds on sub-agents. Users can create **teams of agents with defined roles** that work together collaboratively.
+
+#### Difference from Sub-Agents
+
+| Feature | Sub-Agents | Agent Teams |
+|---------|------------|-------------|
+| Task splitting | Claude decides automatically | User defines roles |
+| Specialization | General purpose | Role-specific (QA, frontend, etc.) |
+| Coordination | Independent processing | Message exchange between agents |
+| Configuration | Not required | Defined in CLAUDE.md etc. |
+
+#### Example Roles
+
+With Agent Teams, you can define specialists such as:
+
+- **QA Expert**: Test creation, quality checking
+- **Frontend Lead**: UI/UX, React/Vue implementation
+- **Backend Lead**: API, database, server processing
+- **Security Lead**: Vulnerability checks, security reviews
+- **Documentation Lead**: README, API specification writing
+
+#### Usage Example
+
+```
+Join this project as a QA team and
+improve the test coverage
+```
+
+→ From a QA expert perspective, suggests testing strategies and creates test code.
+
+#### Current Status
+
+Agent Teams is provided as an experimental feature. Basic sub-agent functionality is used automatically, but detailed team definition features will continue to evolve in the future.
+
+Start by utilizing the automatic sub-agent splitting feature, and consider Agent Teams configuration as needed.
 
 ---
 

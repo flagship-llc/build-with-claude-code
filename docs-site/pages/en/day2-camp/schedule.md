@@ -1,4 +1,4 @@
-# Claude Code Camp - Day Schedule
+# Build with Claude Code - Day Schedule
 
 **Time**: 10:00 AM - 6:00 PM (8 hours)
 
@@ -11,9 +11,9 @@
 | 9:45 | Doors Open | Check-in, prepare seating |
 | 10:00 | Opening | Greetings, overview of the day |
 | 10:15 | Introductions & Idea Sharing | 1 minute each to present "what I want to build" |
-| 10:30 | Development Time (Morning) | Individual development + mob programming support |
-| 12:00 | Lunch Networking | Eat lunch and network |
-| 1:00 PM | Development Time (Afternoon) | Final push, finishing touches |
+| 10:30 | Development Time (Morning) | Individual development, mentor support |
+| 12:00 | Lunch Networking | Share progress and questions over lunch |
+| 1:00 PM | Development Time (Afternoon) | Continue development |
 | 4:30 PM | Presentation Prep | Prepare demo, organize materials |
 | 5:00 PM | Show & Tell | 3 minutes each for demo |
 | 5:45 PM | Closing | Reflection, next event info |
@@ -29,7 +29,7 @@
 - Host greetings
 - Confirm today's goal
 - Timetable explanation
-- Notes (Wi-Fi, restrooms, emergency contacts)
+- Notes (Wi-Fi, restrooms, etc.)
 
 **Goal**:
 > Create one "working thing" by the end of today and demo it for everyone
@@ -53,7 +53,7 @@
 
 ### Development Time (10:30 - 12:00 / 1:00 PM - 4:30 PM)
 
-**Format**: Individual development + mob programming style
+**Format**: Individual development + mentor support
 
 **How it works**:
 - Develop on your own PC
@@ -71,9 +71,10 @@
 ### Lunch Networking (12:00 - 1:00 PM)
 
 **Content**:
-- Eat lunch and network
+- Exchange ideas over lunch
 - Share morning progress
-- Get advice for the afternoon
+- Discuss challenges and solutions
+- Share questions and insights
 
 **Points**:
 - Taking a complete break is OK
@@ -119,7 +120,7 @@
 - Share highlights
 - Next camp announcement
 - Survey request
-- Group photo (optional)
+- Group photo
 
 ---
 
@@ -129,25 +130,6 @@
 - [ ] Charger
 - [ ] Environment setup complete (from pre-setup session)
 - [ ] Idea of what you want to build
-
----
-
-## Venue Equipment (For Organizers)
-
-- [ ] Wi-Fi (post SSID and password)
-- [ ] Power strips
-- [ ] Projector / large display
-- [ ] HDMI / USB-C cables
-- [ ] Whiteboard
-- [ ] Sticky notes & markers
-- [ ] Lunch & drinks
-
----
-
-## Emergency Contacts
-
-- Organizer: [Name] [Phone]
-- Venue Management: [Phone]
 
 ---
 

@@ -1,4 +1,5 @@
 export default {
   "claude": "About Claude",
-  "dev": "Development Basics"
+  "dev": "Development Basics",
+  "achievements": "Achievements"
 }

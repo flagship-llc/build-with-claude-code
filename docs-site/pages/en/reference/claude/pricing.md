@@ -8,10 +8,13 @@ Official pricing page: https://claude.com/pricing
 
 ## Plan Comparison
 
-| Plan | Monthly Cost | Key Features |
-|------|--------------|--------------|
-| **Pro** | $20/month | Sufficient usage for typical development work |
-| **Max** | $100/month or $200/month | For large projects or intensive development |
+| Plan | Monthly | Annual | Key Features |
+|------|---------|--------|--------------|
+| **Pro** | $20/month | $17/month ($204/year) | Sufficient usage for typical development work |
+| **Max 5x** | $100/month | $85/month ($1,020/year) | ~5x Pro usage |
+| **Max 20x** | $200/month | $170/month ($2,040/year) | ~20x Pro usage |
+
+*Annual billing is approximately 15% off
 
 ### Pro Plan
 
@@ -21,31 +24,33 @@ Official pricing page: https://claude.com/pricing
 
 ### Max Plan
 
-- 5x or more usage compared to Pro plan
+- **Max 5x**: Approximately 5x the usage of Pro plan
+- **Max 20x**: Approximately 20x the usage of Pro plan
 - Ideal for extended intensive development sessions
 - Upgrade option when token limits are reached
 
 ---
 
-## What is the 5-Hour Rolling Window?
+## What is the 5-Hour Session Window?
 
-Claude's usage limits are managed through a **5-hour rolling window**.
+Claude's usage limits are managed through a **5-hour session window**.
 
 ### How It Works
 
-1. Your usage over the past 5 hours is calculated
-2. When you reach the limit, you temporarily cannot use the service
-3. As time passes, usage from 5+ hours ago "rolls off" and your limit recovers
+1. A 5-hour "window" starts when you send your first request
+2. Usage during that window is counted toward your limit
+3. After 5 hours, the window resets, and a new window starts with your next request
 
 ### Example
 
 ```
-10:00 - Heavy token usage
-11:00 - Still near the limit
-12:00 - Slight recovery
-...
-15:00 - Usage from 10:00 "rolls off" the window, significant recovery
+10:00 - First request sent → 5-hour window starts
+10:00-15:00 - Usage during this period is counted
+15:00 - Window ends, reset
+15:05 - Next request → New 5-hour window starts (until 20:05)
 ```
+
+**Key point**: The reset happens **5 hours from when you started using**, not at a fixed time like midnight.
 
 ### How to Check Your Usage
 
@@ -109,19 +114,29 @@ Tokens are the "units" consumed in conversations with Claude.
 
 ## Useful Tool: Claude Usage Tracker
 
-If you want to visualize your usage, the Chrome extension "Claude Usage Tracker" is helpful.
+A Chrome extension to visualize your usage.
 
-https://github.com/hamed-elfayome/Claude-Usage-Tracker
+### Installation
 
-- Check current usage in real-time
-- Display time remaining until limit
-- Graph view of usage history
+1. Visit [Claude Usage Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker)
+2. Install the Chrome extension from Chrome Web Store
+3. Your usage is displayed when you open Claude
+
+### What You Can Check
+
+![Claude Usage Tracker](/images/claude-usage-tracker.png)
+
+- Current usage (percentage)
+- 5-hour session remaining
+- Reset time
+
+As a Chrome extension, it's always visible when using Claude, so you can check your usage anytime.
 
 ---
 
 ## Summary
 
-- Usage is managed through a **5-hour rolling window**
+- Usage is managed through a **5-hour session window** (resets 5 hours from when you start)
 - Pro Plan is sufficient for typical development work
-- Even if you reach the limit, it recovers after waiting a bit
+- Even if you reach the limit, it recovers at the reset time
 - The workshop is set up so you can develop without worrying about limits

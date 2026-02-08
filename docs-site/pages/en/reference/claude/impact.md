@@ -8,6 +8,16 @@ AI, especially large language models like Claude, is fundamentally changing how 
 
 Since late 2025, the phrase "SaaS is Dead" has been spreading.
 
+### The Shock to SaaS Companies
+
+Following Anthropic's agent AI tool announcement, SaaS companies reportedly lost approximately $300 billion in market value on February 3, 2025 alone. Traditional SaaS companies relied on "seat-based pricing," but as AI agents begin operating directly via APIs without going through UIs, this revenue structure may collapse.
+
+On the other hand, AI is analyzed as having "real, tangible utility." The implementation speed of generative AI is dramatically faster compared to historical infrastructure revolutions (like railroad networks), making it easier for expectations to be realized.
+
+Claude Code's innovation lies in AI operating at the "OS layer" rather than just the application layer, giving it a structural advantage in replacing the user's actual work on their PC.
+
+Reference: [SaaS Will Die, But the AI Bubble Won't Burst (NewsPicks)](https://newspicks.com/news/15987265/)
+
 ### The Traditional SaaS Model
 
 Previously, when you wanted software, your options were limited:
@@ -77,6 +87,28 @@ You no longer need to be a professional engineer to turn ideas into reality.
 - How to give effective instructions to Claude
 - How to collaborate with AI in development
 - Confidence and experience that "you can build things"
+
+---
+
+## Anthropic CEO's Vision
+
+Anthropic CEO Dario Amodei has published essays offering deep insights into the future of AI.
+
+### Machines of Loving Grace
+
+An essay on **"How AI Could Transform the World for the Better"**.
+
+Discusses how AI could positively impact biology and medicine, economic development, peace and security, work and creativity, and human relationships.
+
+[Machines of Loving Grace - How AI Could Transform the World for the Better](https://www.darioamodei.com/essay/machines-of-loving-grace)
+
+### The Adolescence of Technology
+
+An essay on **"Confronting and Overcoming the Risks of Powerful AI"**.
+
+Presents the risks accompanying rapid AI development and a framework for managing them responsibly.
+
+[The Adolescence of Technology - Confronting and Overcoming the Risks of Powerful AI](https://www.darioamodei.com/essay/the-adolescence-of-technology)
 
 ---
 
