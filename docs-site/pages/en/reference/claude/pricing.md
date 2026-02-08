@@ -2,6 +2,8 @@
 
 An explanation of the plans available for using Claude Code and how usage works.
 
+Official pricing page: https://claude.com/pricing
+
 ---
 
 ## Plan Comparison
@@ -45,9 +47,20 @@ Claude's usage limits are managed through a **5-hour rolling window**.
 15:00 - Usage from 10:00 "rolls off" the window, significant recovery
 ```
 
+### How to Check Your Usage
+
+You can check your current usage in Claude's settings:
+
+https://claude.ai/settings/usage
+
+![Usage settings screen](/images/settings_usage.png)
+
+- **Session usage**: Current usage percentage (%)
+- **Reset time**: Displayed as "Resets at X:XX"
+
 ### What to Do When You Reach the Limit
 
-1. **Wait a bit**: Often recovers after 30 minutes to 1 hour
+1. **Wait until reset time**: Wait until the reset time shown on screen
 2. **Break up your work**: Make smaller requests instead of large changes all at once
 3. **Upgrade to Max Plan**: Significantly higher limits
 
@@ -91,6 +104,18 @@ Tokens are the "units" consumed in conversations with Claude.
 1. First, consult with a mentor
 2. Upgrade to Max Plan if needed
 3. If there's wait time, use it as time to think about your design
+
+---
+
+## Useful Tool: Claude Usage Tracker
+
+If you want to visualize your usage, the Chrome extension "Claude Usage Tracker" is helpful.
+
+https://github.com/hamed-elfayome/Claude-Usage-Tracker
+
+- Check current usage in real-time
+- Display time remaining until limit
+- Graph view of usage history
 
 ---
 

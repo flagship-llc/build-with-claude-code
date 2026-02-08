@@ -16,7 +16,7 @@ const config: DocsThemeConfig = {
   footer: {
     content: (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
-        <span>Flagship Inc.</span>
+        <a href="https://flagship.cc/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Flagship Inc.</a>
         <span style={{ fontSize: '12px', color: '#666' }}>Made in Tokyo / Built with Claude</span>
       </div>
     ),

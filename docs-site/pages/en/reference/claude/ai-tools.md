@@ -12,7 +12,8 @@ AI coding tools can be broadly classified into three types:
 |------|-----------------|----------|
 | **IDE Extensions** | Added to existing editors. Focus on completion and chat | GitHub Copilot |
 | **AI-Integrated IDEs** | The editor itself is designed around AI | Cursor, Google Antigravity |
-| **Terminal-Based** | Operates from command line. Strong at task delegation | Claude Code, Aider |
+| **Terminal-Based** | Operates from command line. Strong at task delegation | Aider |
+| **Hybrid** | Both VS Code extension + terminal support | Claude Code |
 
 ---
 
@@ -65,15 +66,22 @@ Google's "agent-first" IDE announced alongside Gemini 3 in November 2025. Based 
 
 **Best for**: Developers in the Google ecosystem, those interested in agent-based development
 
+**Note (as of Feb 2026)**:
+- Currently in public preview with rate limits
+- Expected to transition to official release (v1.0) around mid-2026
+- Rate limit adjustments along with stability improvements are anticipated at official release, but no confirmed details yet
+
 ---
 
 ### Claude Code
 
-**Type**: Terminal-Based
+**Type**: Terminal-Based + VS Code Extension
 
-A coding assistant from Anthropic that operates in the terminal.
+A coding assistant from Anthropic available both as a terminal CLI and VS Code extension.
 
 **Features**:
+- **VS Code Extension**: Chat panel within the editor
+- **Terminal (CLI)**: Also available from command line
 - Task delegation style ("build this for me")
 - Strong at analyzing and designing complex problems
 - High reasoning capability with Opus 4.5/4.6
@@ -82,7 +90,7 @@ A coding assistant from Anthropic that operates in the terminal.
 **Best for**:
 - **People without programming experience** (can give instructions in natural language)
 - Those who want to delegate complex design decisions to AI
-- Those who work outside of VS Code
+- Those who want flexibility to work in VS Code or terminal
 
 ---
 
