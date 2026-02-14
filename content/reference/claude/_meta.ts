@@ -3,5 +3,7 @@ export default {
   "ai-tools": "AIコーディングツール比較",
   "case-studies": "活用事例",
   "pricing": "料金体系",
-  "impact": "Claudeが変える世界"
+  "impact": "Claudeが変える世界",
+  "advanced-techniques": "Claudeを使いこなすテクニック",
+  "tips": "Tips集"
 }

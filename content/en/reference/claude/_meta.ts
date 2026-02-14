@@ -3,5 +3,7 @@ export default {
   "ai-tools": "AI Coding Tools Comparison",
   "case-studies": "Case Studies",
   "pricing": "Pricing",
-  "impact": "How Claude Changes the World"
+  "impact": "How Claude Changes the World",
+  "advanced-techniques": "Advanced Claude Techniques",
+  "tips": "Tips"
 }
