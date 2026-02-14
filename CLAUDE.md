@@ -4,39 +4,37 @@
 
 This project supports both Japanese (ja) and English (en).
 
-**Important**: When editing or adding content in `docs-site/pages/`, always update **both language versions**:
-- `pages/ja/` - Japanese content
-- `pages/en/` - English content
+**Important**: When editing or adding content in `content/`, always update **both language versions**:
+- Content files use `_meta.ts` for navigation in each directory
+- English content is in `content/en/` subdirectories (when applicable)
 
 This includes:
 - Content pages (`.md`, `.mdx`)
 - Navigation files (`_meta.ts`)
 - Links in index pages
 
-## Documentation Site Structure
+## Project Structure
 
 ```
-docs-site/
-├── pages/
-│   ├── ja/           # Japanese pages (default locale)
-│   │   ├── _meta.ts
-│   │   ├── index.mdx
-│   │   ├── day1-setup/
-│   │   ├── day1.5-pre-dev/
-│   │   ├── day2-camp/
-│   │   └── reference/
-│   └── en/           # English pages
-│       ├── _meta.ts
-│       ├── index.mdx
-│       └── ... (same structure as ja/)
+├── app/              # Next.js App Router
+│   ├── (ja)/         # Japanese routes (default locale)
+│   ├── en/           # English routes
+│   └── layout.tsx
+├── content/          # MDX/MD content files
+│   ├── _meta.ts
+│   ├── day1-setup/
+│   ├── day1.5-pre-dev/
+│   ├── day2-camp/
+│   └── reference/
+├── components/
 ├── public/
 ├── styles/
-└── theme.config.tsx
+└── next.config.mjs
 ```
 
 ## Tech Stack
 
-- **Framework**: Nextra v3 with Next.js 14
+- **Framework**: Nextra v3 with Next.js 16 (App Router)
 - **i18n**: Folder-based (`/ja/`, `/en/`)
 - **Meta files**: Use `_meta.ts` (not `.json`)
 
