@@ -1,0 +1,10 @@
+export default {
+  "index": "はじめに",
+  "day1-setup": "Day 1: セットアップ",
+  "day1.5-pre-dev": "Day 1.5: プレ開発",
+  "day2-camp": "Day 2: キャンプ当日",
+  "reference": "リファレンス",
+  "en": {
+    "display": "hidden"
+  }
+}

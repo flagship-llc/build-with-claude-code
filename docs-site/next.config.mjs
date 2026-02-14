@@ -1,22 +1,10 @@
 import nextra from 'nextra'
 
 const withNextra = nextra({
-  theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.tsx',
+  search: {
+    codeblocks: false
+  },
+  contentDirBasePath: '/'
 })
 
-export default withNextra({
-  i18n: {
-    locales: ['ja', 'en'],
-    defaultLocale: 'ja',
-  },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/ja',
-        permanent: true,
-      },
-    ]
-  },
-})
+export default withNextra({})
