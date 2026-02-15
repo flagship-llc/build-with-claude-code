@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind",
     "start": "next start"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@types/node": "^25.2.2",
     "@types/react": "19.2.13",
+    "pagefind": "^1.4.0",
     "typescript": "5.9.3"
   }
 }
