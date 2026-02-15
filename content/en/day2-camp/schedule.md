@@ -14,6 +14,7 @@
 | 10:30 | Development Time (Morning) | Individual development, mentor support |
 | 12:00 | Lunch Networking | Share progress and questions over lunch |
 | 1:00 PM | Development Time (Afternoon) | Continue development |
+| 2:30 PM | Progress Sharing / Q&A | 2 minutes per person + feedback |
 | 4:30 PM | Presentation Prep | Prepare demo, organize materials |
 | 5:00 PM | Show & Tell | 3 minutes each for demo |
 | 5:45 PM | Closing | Reflection, next event info |
