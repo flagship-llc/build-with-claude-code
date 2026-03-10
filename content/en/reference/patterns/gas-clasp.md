@@ -1,0 +1,87 @@
+# Developing Google Apps Script with Claude Code
+
+Google Apps Script (GAS) is widely used for automating Google Workspace tasks like spreadsheet calculations, form notifications, and data transfers.
+Using clasp (Command Line Apps Script Projects), you can develop and deploy GAS directly from Claude Code.
+
+---
+
+## What is clasp?
+
+clasp is Google's official CLI tool for GAS. It lets you edit GAS code locally and deploy from the command line.
+
+**Benefits with Claude Code:**
+- Describe what you want and Claude Code generates the GAS code
+- Import existing GAS projects and ask for improvements
+- Complete development-to-deployment from Claude Code
+
+---
+
+## Setup
+
+### 1. Install clasp
+
+```bash
+npm install -g @google/clasp
+```
+
+### 2. Authenticate with Google
+
+```bash
+clasp login
+```
+
+A browser window opens. Log in and grant permissions.
+
+### 3. Enable the Apps Script API
+
+Visit the [Apps Script API settings](https://script.google.com/home/usersettings) and turn the API **On**.
+
+---
+
+## Usage
+
+### Creating a new GAS project
+
+```
+"Create a GAS script using clasp that aggregates monthly sales data
+and runs automatically every Monday"
+```
+
+### Importing an existing project
+
+```bash
+clasp clone <script-id>
+```
+
+Then ask Claude Code:
+
+```
+"Read this GAS code and explain what it does. Then add error handling."
+```
+
+### Deploying
+
+```bash
+clasp push    # Upload code
+clasp deploy  # Deploy (create version)
+```
+
+---
+
+## Common Use Cases
+
+| Goal | Example prompt |
+|---|---|
+| Automate spreadsheet calculations | "Create a GAS that aggregates last month's sales on the 1st" |
+| Form response notifications | "Create a GAS that sends a Slack notification on form submission" |
+| Data transfer | "Create a GAS that copies data from Sheet A to Sheet B" |
+| Bulk email | "Create a GAS that sends emails based on a Sheets list" |
+
+---
+
+## References
+
+- [clasp (GitHub)](https://github.com/google/clasp)
+- [clasp Documentation](https://developers.google.com/apps-script/guides/clasp)
+- [clasp Codelab](https://codelabs.developers.google.com/codelabs/clasp)
+- [Google Apps Script Official](https://developers.google.com/apps-script)

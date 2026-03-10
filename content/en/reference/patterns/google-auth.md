@@ -170,3 +170,59 @@ For external users:
 - **Production mode**: Requires Google review (relatively smooth for basic scopes only)
 
 If you selected "Internal" for internal tools, no review is needed.
+
+---
+
+## Using Google Workspace MCP
+
+Once OAuth is configured, Claude Code can directly interact with Google Workspace services.
+
+### Supported Services
+
+| Service | Read | Write |
+|---|---|---|
+| Calendar | Fetch/search events | Create/update events |
+| Sheets | Read data | Add/update cells and rows |
+| Docs | Read documents | Create/edit documents |
+| Drive | List/search files | Upload files |
+| Gmail | Search/read emails | Create drafts |
+
+### Option 1: Google Workspace CLI (Recommended)
+
+Official Google CLI tool providing all Workspace APIs through a single MCP.
+
+```bash
+npm install -g @googleworkspace/cli
+```
+
+Add to `.mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "google-workspace": {
+      "command": "gws",
+      "args": ["mcp"]
+    }
+  }
+}
+```
+
+**Using with Claude Code:**
+
+```
+"Get my calendar events for this week"
+"Read this spreadsheet and summarize the data"
+"Create a Google Doc with this content"
+```
+
+### Option 2: Community MCP Servers
+
+- [google_workspace_mcp](https://github.com/taylorwilsdon/google_workspace_mcp) — Calendar, Drive, Gmail, Contacts
+
+### References
+
+- [Google Workspace CLI (Official)](https://github.com/googleworkspace/cli)
+- [Google Workspace MCP Documentation](https://developers.google.com/workspace/mcp)
+
+Once OAuth is set up, it works across all Google services.

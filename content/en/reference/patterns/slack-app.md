@@ -157,3 +157,41 @@ This is my current Slack app manifest.json: [paste content]
 I want to add the ability to open a modal when users click a button.
 Please update the manifest.json with the necessary scopes and features.
 ```
+
+---
+
+## Slack Official MCP Server
+
+You can interact with Slack from Claude Code without creating your own Slack App, using Slack's official MCP server.
+
+### Setup
+
+Run in Claude Code:
+
+```
+/install-mcp slack
+```
+
+Or follow the Slack official documentation for setup.
+
+### Usage Examples
+
+```
+"Summarize recent messages in #general"
+"Post this week's schedule to #team-updates"
+"Search Slack for messages mentioning [topic]"
+```
+
+### Official MCP vs Custom Slack App
+
+| | Slack Official MCP | Custom Slack App |
+|---|---|---|
+| Setup | Easy (just install) | Requires Slack admin configuration |
+| Customization | Limited | Fine-grained scope control |
+| Best for | Getting started quickly | Strict permission management |
+
+Start with the official MCP, then consider a custom Slack App if you need more control.
+
+### References
+
+- [Slack MCP Server (Official Documentation)](https://docs.slack.dev/ai/slack-mcp-server/)
