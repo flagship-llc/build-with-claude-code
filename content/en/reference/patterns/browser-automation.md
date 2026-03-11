@@ -88,6 +88,8 @@ Microsoft's AI test agents covering the full cycle: planning → code generation
 npx playwright init-agents
 ```
 
+**Always review auto-generated test plans and test code to ensure they match your intended test scenarios before running them.**
+
 ---
 
 ## Before/After

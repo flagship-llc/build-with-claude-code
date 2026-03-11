@@ -31,7 +31,7 @@ gh --version
 "Show all issues labeled 'bug'"
 ```
 
-Claude Code formats the content (title, body, labels), asks for confirmation, then creates the Issue.
+Claude Code formats the content (title, body, labels), asks for confirmation, then creates the Issue. **Always review the title, labels, and body in the confirmation dialog before approving.**
 
 ---
 

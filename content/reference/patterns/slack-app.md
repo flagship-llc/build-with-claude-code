@@ -33,6 +33,8 @@ My app will:
 
 Claude Codeがアプリの要件に応じた manifest.json を生成してくれます。たとえば上記のプロンプトであれば、`chat:write`、`channels:history`、`commands` などの必要なスコープやイベント購読が自動的に設定されます。
 
+**生成された manifest.json は必ず中身を確認してください。** 特にスコープ（権限）が必要以上に広くないか、意図しないイベント購読が含まれていないかをチェックします。
+
 ---
 
 ## manifest.json を使った Slack App の作成手順

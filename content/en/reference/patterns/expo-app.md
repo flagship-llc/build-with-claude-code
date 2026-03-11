@@ -40,7 +40,7 @@ Tell Claude Code:
 "Make the design cleaner"
 ```
 
-Build small, test often.
+Build small, test often. **Always verify Claude's generated code on your device before moving to the next feature.**
 
 ---
 
@@ -63,6 +63,17 @@ For native iOS development:
 - **Apple ID** — Personal Apple ID works (no developer enrollment needed)
 
 Tell Claude Code "I want to build an iOS app with Swift" to get started.
+
+### Xcode 26.3 Agent Features
+
+Xcode 26.3 (released February 2026) introduced built-in AI agent capabilities.
+
+- **Anthropic's Claude Agent** and **OpenAI's Codex** run directly within Xcode
+- Agents autonomously build, test, and capture previews
+- Can search Apple documentation and modify project settings
+- Open standard compliant — also works with Claude Code and other compatible tools
+
+For Swift development, you now have two options: giving instructions through Claude Code, or using Xcode's built-in agent features directly. See [AI Coding Tools Comparison](/en/reference/claude/ai-tools) for details.
 
 ---
 

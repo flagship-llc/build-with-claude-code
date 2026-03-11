@@ -33,6 +33,8 @@ My app will:
 
 Claude Code will generate a manifest.json tailored to your requirements. For the prompt above, it would automatically configure the necessary scopes like `chat:write`, `channels:history`, and `commands`, along with event subscriptions.
 
+**Always review the generated manifest.json before using it.** Check that scopes (permissions) aren't broader than necessary and no unintended event subscriptions are included.
+
 ---
 
 ## Creating a Slack App with manifest.json

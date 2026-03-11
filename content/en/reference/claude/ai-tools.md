@@ -12,6 +12,7 @@ AI coding tools can be broadly classified into three types:
 |------|-----------------|----------|
 | **IDE Extensions** | Added to existing editors. Focus on completion and chat | GitHub Copilot |
 | **AI-Integrated IDEs** | The editor itself is designed around AI | Cursor, Google Antigravity |
+| **Native Integration** | AI built into platform-official IDEs | Xcode (Apple) |
 | **Terminal-Based** | Operates from command line. Strong at task delegation | Aider |
 | **Hybrid** | Both VS Code extension + terminal support | Claude Code |
 
@@ -94,6 +95,25 @@ A coding assistant from Anthropic available both as a terminal CLI and VS Code e
 
 ---
 
+### Xcode (Apple Intelligence)
+
+**Type**: Native Integration
+
+AI features integrated into Apple's official IDE "Xcode." ChatGPT integration announced at WWDC in June 2025, followed by agentic coding support in Xcode 26.3 (February 2026).
+
+**Features**:
+- **Coding Tools**: Inline code changes, documentation generation, and bug fixes via natural language
+- **Agentic Coding (26.3+)**: Supports Anthropic's Claude Agent and OpenAI's Codex as agents
+- Agents autonomously run builds, tests, capture previews, and search Apple documentation
+- **Open standard compliant** — compatible with other tools like Cursor and Claude Code
+- macOS only, free to use without Apple Developer Program membership
+
+**Best for**: iOS/macOS app developers, those developing within the Apple ecosystem
+
+**Notable**: Xcode's agent support is a landmark sign that AI coding is shifting from "third-party tools" to "official platform features." Similar integrations from other IDEs (Visual Studio, JetBrains, etc.) are expected to follow.
+
+---
+
 ### Other Tools
 
 | Tool | Type | Features |
@@ -147,7 +167,7 @@ Claude: (creates all necessary files, including tests)
 ## Summary
 
 - AI coding tools come in three types: **IDE Extensions**, **AI-Integrated IDEs**, and **Terminal-Based**
-- GitHub Copilot is most widespread, Cursor is an AI-native IDE, Google Antigravity specializes in agents
+- GitHub Copilot is most widespread, Cursor is an AI-native IDE, Google Antigravity specializes in agents, Xcode is a native platform integration
 - Claude Code is **usable without programming experience**, a task delegation-style tool
 - Traditional tools are "assistants", Claude Code is a "partner"—a fundamental design philosophy difference
 

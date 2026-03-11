@@ -5,5 +5,6 @@ export default {
   "pricing": "Pricing",
   "impact": "How Claude Changes the World",
   "advanced-techniques": "Advanced Claude Techniques",
-  "tips": "Tips"
+  "tips": "Tips",
+  "workslop": "Watch Out for Workslop"
 }

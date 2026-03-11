@@ -55,6 +55,21 @@ Replace `your-space.backlog.com` with your Backlog space domain.
 
 ---
 
+## Review Checklist
+
+Never apply Claude Code's generated or updated content without reviewing it first.
+
+| Check | What to verify |
+|---|---|
+| **Issue content** | Are the title, description, and assignee correct? |
+| **Labels/Priority** | Does the classification follow your team's conventions? |
+| **Progress reports** | Do the numbers and completion rates match reality? |
+| **Bulk operations** | When updating multiple issues, are the targets correct? |
+
+**Especially for auto-generated progress reports: always verify that Claude's numbers and statuses match the actual state.** Sharing auto-generated reports without review is workslop.
+
+---
+
 ## References
 
 - [Backlog MCP Server (Nulab Official)](https://github.com/nulab/backlog-mcp-server)
