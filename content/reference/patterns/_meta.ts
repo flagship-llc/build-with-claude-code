@@ -5,5 +5,6 @@ export default {
   "backlog": "Backlog の操作",
   "gas-clasp": "GAS（Google Apps Script）開発",
   "expo-app": "モバイルアプリ開発",
-  "browser-automation": "ブラウザ操作・テスト自動化"
+  "browser-automation": "ブラウザ操作・テスト自動化",
+  "recruitment": "採用業務の自動化"
 }

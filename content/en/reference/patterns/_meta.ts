@@ -5,5 +5,6 @@ export default {
   "backlog": "Backlog",
   "gas-clasp": "Google Apps Script (clasp)",
   "expo-app": "Mobile App Development",
-  "browser-automation": "Browser & Test Automation"
+  "browser-automation": "Browser & Test Automation",
+  "recruitment": "Recruitment Automation"
 }
