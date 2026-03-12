@@ -33,6 +33,8 @@ My app will:
 
 Claude Codeがアプリの要件に応じた manifest.json を生成してくれます。たとえば上記のプロンプトであれば、`chat:write`、`channels:history`、`commands` などの必要なスコープやイベント購読が自動的に設定されます。
 
+**生成された manifest.json は必ず中身を確認してください。** 特にスコープ（権限）が必要以上に広くないか、意図しないイベント購読が含まれていないかをチェックします。
+
 ---
 
 ## manifest.json を使った Slack App の作成手順
@@ -157,3 +159,41 @@ This is my current Slack app manifest.json: [paste content]
 I want to add the ability to open a modal when users click a button.
 Please update the manifest.json with the necessary scopes and features.
 ```
+
+---
+
+## Slack 公式 MCP サーバー
+
+Slack App を自分で作らなくても、Slack 公式の MCP サーバーで Claude Code から Slack を操作できます。
+
+### セットアップ
+
+Claude Code で以下を実行：
+
+```
+/install-mcp slack
+```
+
+または Slack 公式ドキュメントの手順に従ってセットアップしてください。
+
+### 使い方の例
+
+```
+「#general の最近のメッセージを要約して」
+「#team-updates に今週の予定を投稿して」
+「Slack で〇〇について言及しているメッセージを探して」
+```
+
+### 自前の Slack App と公式 MCP の使い分け
+
+| | Slack 公式 MCP | 自前の Slack App |
+|---|---|---|
+| セットアップ | 簡単（インストールするだけ） | Slack 管理画面での設定が必要 |
+| カスタマイズ | 制限あり | スコープを細かく制御できる |
+| 適したケース | すぐに使いたい | Bot の権限を厳密に管理したい |
+
+まずは公式 MCP で試して、カスタマイズが必要になったら自前の Slack App を検討するのがおすすめです。
+
+### 参考リンク
+
+- [Slack MCP Server（公式ドキュメント）](https://docs.slack.dev/ai/slack-mcp-server/)

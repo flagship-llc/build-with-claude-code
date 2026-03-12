@@ -5,5 +5,6 @@ export default {
   "pricing": "料金体系",
   "impact": "Claudeが変える世界",
   "advanced-techniques": "Claudeを使いこなすテクニック",
-  "tips": "Tips集"
+  "tips": "Tips集",
+  "workslop": "ワークスロップに気をつける"
 }

@@ -170,3 +170,61 @@ NextAuthの本番環境用の設定を確認して、必要な環境変数を一
 - **本番モード**: Googleの審査が必要（基本的なスコープのみなら比較的スムーズ）
 
 社内ツールで「内部（Internal）」を選択した場合は審査不要です。
+
+---
+
+## Google Workspace MCP で各サービスを操作する
+
+OAuth 認証が設定できたら、Claude Code から Google Workspace の各サービスを直接操作できます。
+
+### 対応サービス
+
+| サービス | 読む | 書く |
+|---|---|---|
+| Calendar | 予定の取得・検索 | 予定の作成・更新 |
+| Sheets | データの読み取り | セル・行の追加・更新 |
+| Docs | ドキュメントの読み取り | ドキュメントの作成・編集 |
+| Drive | ファイル一覧・検索 | ファイルのアップロード |
+| Gmail | メールの検索・読み取り | 下書き作成 |
+
+### 方法1：Google Workspace CLI（推奨）
+
+Google 公式の CLI ツール。全 Workspace API を1つの MCP で提供します。
+
+```bash
+npm install -g @googleworkspace/cli
+```
+
+Claude Code の `.mcp.json` に追加：
+
+```json
+{
+  "mcpServers": {
+    "google-workspace": {
+      "command": "gws",
+      "args": ["mcp"]
+    }
+  }
+}
+```
+
+**Claude Code での使い方：**
+
+```
+「Google Calendar から今週の予定を取得して」
+「この Sheets のデータを読んで集計して」
+「この内容で Google Docs を作って」
+```
+
+### 方法2：コミュニティ製 MCP サーバー
+
+個別のサービスに特化した MCP サーバーも利用できます。
+
+- [google_workspace_mcp](https://github.com/taylorwilsdon/google_workspace_mcp) — Calendar, Drive, Gmail, Contacts に対応
+
+### 参考リンク
+
+- [Google Workspace CLI（公式）](https://github.com/googleworkspace/cli)
+- [Google Workspace MCP ドキュメント](https://developers.google.com/workspace/mcp)
+
+一度 OAuth 認証を設定すれば、全 Google サービスで共通で使えます。

@@ -4,6 +4,29 @@ Tips for smooth development using Claude Code.
 
 ---
 
+## Working with Claude Code Effectively
+
+Claude Code is a conversational tool. It's not just for people who can write code — it's for anyone who can give clear instructions.
+When you're unsure or need guidance, try these approaches:
+
+| Situation | What to say |
+|---|---|
+| Want to understand before proceeding | "Explain what you're about to do before doing it" |
+| Want to proceed safely | "Use the safest approach. Always confirm before executing" |
+| Want to understand what happened | "What did you just do? I want to understand" |
+| Feeling uncertain mid-task | "Stop. Explain the current situation" |
+| Got an error | Paste the error message as-is → Claude will explain the cause and fix |
+| Want to verify settings | "Check if this configuration is correct" |
+
+**Key things to remember:**
+
+- Claude Code asks "OK to proceed?" before actions. If unsure, say **"No"** to stop
+- Say "explain until I understand" and it will keep explaining
+- Mistakes are reversible — say "undo that" to roll back
+- `/clear` resets the conversation. If things get confusing, start fresh
+
+---
+
 ## Communication Tips
 
 ### 1. Start by Clearly Stating Your Goal
